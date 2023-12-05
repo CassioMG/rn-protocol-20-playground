@@ -20,13 +20,17 @@ Please note that when testing a `new package version` (e.g. when upgrading `js-x
 
 You also have the option to use a `locally compiled package` by specifying it's `file:/` path in `package.json`.
 
-E.g.: instead of using `"js-xdr": "3.0.0"` you could use `"js-xdr": "file:/Users/<path-to-xdr-project>/js-xdr"`. This way you are able to easily apply changes to the `js-xdr` package and test it on this RN project. You'll want to delete the `dist`, `lib` and `node_modules` folder from your local `js-xdr` project every time you need to re-compile it to make sure the applied changes will take effect. Please don't forget to also delete the `node_modules` folder from the `rn-protocol-20-playground` project every time you have a package change to make sure the changes will take effect.
+
+
+E.g.: instead of using `"js-xdr": "3.0.0"` you could use `"js-xdr": "file:/Users/<path-to-xdr-project>/js-xdr"` in [package.json](https://github.com/CassioMG/rn-protocol-20-playground/blob/main/package.json). This way you are able to easily apply changes to the `js-xdr` package and test it on this RN project. You'll want to delete the `dist`, `lib` and `node_modules` folder from your local `js-xdr` project every time you need to re-compile it to make sure the applied changes will take effect. Please don't forget to also delete the `node_modules` folder from the `rn-protocol-20-playground` project every time you have a package change to make sure the changes will take effect.
 
 ## Testing Protocol-20 in RN vs NODE envs
 
-To test the changes in `RN env` you'll want to run the code in `App.tsx` component in an Android emulator or device (see steps 4 and 5 on the first section):
+To test the changes in `RN env` you'll want to run the code in the [App.tsx](https://github.com/CassioMG/rn-protocol-20-playground/blob/main/App.tsx) component in an Android emulator or device (see steps 4 and 5 on the first section):
    - `yarn start`
    - `yarn android`
 
-To test the changes in `NODE env` you'll want to run the code in `App-test.tsx` through the command line:
+
+
+To test the changes in `NODE env` you'll want to run the code in [App-test.tsx](https://github.com/CassioMG/rn-protocol-20-playground/blob/main/__tests__/App-test.tsx) through the command line:
    - `yarn test`
