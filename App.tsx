@@ -29,6 +29,8 @@ import { Buffer } from "buffer";
 
 import xdr from './src/xdr';
 
+import { Networks, WebAuth } from 'stellar-sdk';
+
 type SectionProps = PropsWithChildren<{
   title: string;
 }>;
@@ -180,6 +182,27 @@ function App(): JSX.Element {
       console.log("X X X ERROR while parsing XDR transaction or operation: ", error);
     }
 
+  },[]);
+
+  useEffect(() => {
+    try {
+      // ***NOTE: for this test to work you'll need to comment out the code that
+      // returns a "The transaction has expired" error on the stellar-sdk here:
+      // https://github.com/stellar/js-stellar-sdk/blob/master/src/webauth/utils.ts#L267-L269
+      // Since the Challenge Tx has a short expiration time so you don't need
+      // to create one yourself
+      const resp = WebAuth.readChallengeTx(
+        stringEnvelope, 
+        "GCXI4DG62YV4CKSW5Y5GWRX3RZ7NZZT26XSAREXXK7KDMMQ7KGLP4DGX", 
+        Networks.TESTNET, 
+        ["dev.vibrantapp.com"], 
+        "webauth-dev.vibrantapp.com"
+        );
+
+      console.log(">>>>> readChallengeTx response: ", resp);
+    } catch (error) {
+      console.log("X X X ERROR while reading challenge transaction: ", error);
+    }
   },[]);
 
   return (
