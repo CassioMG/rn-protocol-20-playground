@@ -76,6 +76,10 @@ function App(): JSX.Element {
   const expectedOperationDataValue = "oSPAzhkvKm2aWqE2NmxmgNGyDwNdPQER7YOirkOTPU8Hf7NDSfz8bv/MGABNaFev";
 
   useEffect(() => {
+    // Log V8, Note: this _v8runtime seems to exist only on Android (:thinking_face:)
+    // console.log(`> > > > > > > > > > > > > > > > V8 global runtim ${global._v8runtime()}`);
+    // console.log(`> > > > > > > > > > > > > > > > V8 version is ${global._v8runtime().version}`);
+
     try {
       const buffer = Buffer.from(stringEnvelope, 'base64');
 
