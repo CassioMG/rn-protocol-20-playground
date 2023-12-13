@@ -93,6 +93,11 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
+    packagingOptions {
+        // Make sure libjsc.so is not packed in APK to reduce the bundle size
+        exclude "**/libjsc.so"
+    }
+
     namespace "com.rnprotocol20playground"
     defaultConfig {
         applicationId "com.rnprotocol20playground"
