@@ -5778,6 +5778,11 @@ react-native-gradle-plugin@^0.71.15:
   resolved "https://registry.yarnpkg.com/react-native-gradle-plugin/-/react-native-gradle-plugin-0.71.19.tgz#3379e28341fcd189bc1f4691cefc84c1a4d7d232"
   integrity sha512-1dVk9NwhoyKHCSxcrM6vY6cxmojeATsBobDicX0ZKr7DgUF2cBQRTKsimQFvzH8XhOVXyH8p4HyDSZNIFI8OlQ==
 
+react-native-v8@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/react-native-v8/-/react-native-v8-2.2.2.tgz#2abb499924f9a7e2ebc185a482848111819fa8d4"
+  integrity sha512-gw2OsgScMl1ynfurk4dHzlyXnXq+zcyC7UQPy2iwHYY8nm8Tk+9/uaTO21yp0lLbXN+elwI+l5ghpRwGkfAwyA==
+
 react-native@0.71.3:
   version "0.71.3"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.71.3.tgz#0faab799c49e61ba12df9e6525c3ac7d595d673c"
@@ -6740,6 +6745,11 @@ utils-merge@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha512-pMZTvIkT1d+TFGvDOqodOclx0QWkkgi6Tdoa8gC8ffGAAqz9pzPTZWAybbsHHoED/ztMtkv/VoYTYyShUn81hA==
+
+v8-ios@^11.110.1:
+  version "11.110.1"
+  resolved "https://registry.yarnpkg.com/v8-ios/-/v8-ios-11.110.1.tgz#f9999d59f5758578f2cfddfba368425c1ad811b7"
+  integrity sha512-D7m4iRnlRMmawZqcL2oXzXYl0zKRbLKHlWAslRcri0NQaf90ZOnYY/cKd7dXr1EjXibraAXs76/NtfQaMYFLBA==
 
 v8-to-istanbul@^9.0.1:
   version "9.1.3"
