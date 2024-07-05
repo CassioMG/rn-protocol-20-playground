@@ -2,7 +2,7 @@
 
 // add a polyfill for URL, otherwise we get a "not implemented" error
 // see https://github.com/facebook/react-native/issues/16434
-// import { URL, URLSearchParams } from "whatwg-url";
+import { URL, URLSearchParams } from "whatwg-url";
 
 if (typeof __dirname === "undefined") {
   global.__dirname = "/";
@@ -43,8 +43,8 @@ if (typeof localStorage !== "undefined") {
 // if (!global.window.EventSource) {
 //   global.window.EventSource = require("eventsource");
 // }
-// global.URL = URL;
-// global.URLSearchParams = URLSearchParams;
+global.URL = URL;
+global.URLSearchParams = URLSearchParams;
 
 // // Fix some fucked up issue where keystore calls are returning [object Blob]???
 // // https://github.com/jhen0409/react-native-debugger/issues/382#issuecomment-544226529
