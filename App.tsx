@@ -27,9 +27,7 @@ import {
 
 import { Buffer } from "buffer";
 
-import xdr from './src/xdr';
-
-import { Networks, WebAuth } from 'stellar-sdk';
+import { Networks, WebAuth, xdr } from "@stellar/stellar-sdk";
 
 type SectionProps = PropsWithChildren<{
   title: string;
