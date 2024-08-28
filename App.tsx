@@ -4,7 +4,7 @@
  *
  * @format
  */
-
+import "@exodus/patch-broken-hermes-typed-arrays";
 import React, { useEffect, useState } from 'react';
 import type {PropsWithChildren} from 'react';
 import {
