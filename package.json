@@ -14,7 +14,7 @@
     "lodash": "^4.17.21",
     "react": "18.2.0",
     "react-native": "0.71.3",
-    "stellar-base": "8.2.2"
+    "@stellar/stellar-base": "12.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
