@@ -10,11 +10,12 @@
     "test": "jest"
   },
   "dependencies": {
+    "@exodus/patch-broken-hermes-typed-arrays": "^1.0.0-alpha.1",
+    "@stellar/stellar-base": "12.1.0",
     "@types/lodash": "^4.14.201",
     "lodash": "^4.17.21",
     "react": "18.2.0",
-    "react-native": "0.71.3",
-    "@stellar/stellar-base": "12.1.0"
+    "react-native": "0.71.3"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

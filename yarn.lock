@@ -1183,6 +1183,11 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.54.0.tgz#4fab9a2ff7860082c304f750e94acd644cf984cf"
   integrity sha512-ut5V+D+fOoWPgGGNj83GGjnntO39xDy6DWxO0wb7Jp3DcMX0TfIqdzHF85VTQkerdyGmuuMD9AKAo5KiNlf/AQ==
 
+"@exodus/patch-broken-hermes-typed-arrays@^1.0.0-alpha.1":
+  version "1.0.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/@exodus/patch-broken-hermes-typed-arrays/-/patch-broken-hermes-typed-arrays-1.0.0-alpha.1.tgz#c686f982fc801d9ad4a60e33e6a9f5a40eb5e132"
+  integrity sha512-oYv+2IJxaNVTnF7lJqS+wrW0JisE9kcKlgQnkrdhtlsfRmFlcYPdPSO8eaIXKHKkzKndy3I+ZzTELg+BVi3vSg==
+
 "@hapi/hoek@^9.0.0":
   version "9.3.0"
   resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-9.3.0.tgz#8368869dcb735be2e7f5cb7647de78e167a251fb"
